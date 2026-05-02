@@ -14,6 +14,19 @@ http://10.225.212.70:5174
 
 ---
 
+## 📸 Screenshots
+
+### Homepage
+![Homepage Hero](docs/screenshots/homepage.png)
+
+### Consulting Areas (Services)
+![Services Page](docs/screenshots/services.png)
+
+### Pricing
+![Pricing Page](docs/screenshots/pricing.png)
+
+---
+
 ## 📁 Project Structure
 
 ```
