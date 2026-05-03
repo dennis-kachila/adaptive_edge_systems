@@ -69,4 +69,16 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
     }
+
+    // 5. Active Nav Highlight — match current page path
+    const currentPath = window.location.pathname;
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        const linkPath = new URL(link.href).pathname;
+        // Exact match for homepage, prefix match for subpages
+        const isHome = linkPath === '/' && currentPath === '/';
+        const isActive = linkPath !== '/' && currentPath.startsWith(linkPath);
+        if (isHome || isActive) {
+            link.classList.add('nav-active');
+        }
+    });
 });
